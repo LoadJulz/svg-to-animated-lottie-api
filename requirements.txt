@@ -1,0 +1,9 @@
+flask>=2.0.0
+flask-cors>=4.0.0
+lottie>=0.7.0
+cairosvg>=2.5.0
+pillow>=9.0.0
+numpy>=1.21.0
+fonttools>=4.0.0
+grapheme>=0.6.0
+requests>=2.25.0
