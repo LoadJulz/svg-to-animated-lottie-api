@@ -9,7 +9,7 @@ import sys
 import os
 
 # Add your project directory to the Python path
-path = '/home/yourusername/svg-to-animated-lottie'  # Replace 'yourusername' with your actual PythonAnywhere username
+path = '/home/yourusername/svg-to-animated-lottie'
 if path not in sys.path:
     sys.path.insert(0, path)
 
