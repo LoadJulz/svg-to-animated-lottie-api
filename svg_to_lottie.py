@@ -122,6 +122,9 @@ def apply_animation_to_layers(lottie_animation: objects.Animation, animation: Ba
     for layer in lottie_animation.layers:
         if hasattr(layer, 'transform'):
             animation.apply(layer.transform, animation_size)
+        # Extend layer's out-point to match the animation duration
+        if hasattr(layer, 'out_point'):
+            layer.out_point = animation.duration
 
 
 def create_lottie_metadata(width: int, height: int, fps: int, duration: int) -> Dict[str, Any]:
