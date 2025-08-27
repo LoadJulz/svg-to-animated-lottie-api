@@ -19,6 +19,10 @@ class FadeInAnimation(BaseAnimation):
     def apply(self, transform, animation_size: Tuple[int, int]) -> None:
         transform.opacity.add_keyframe(0, 0)
         transform.opacity.add_keyframe(30, 100)
+        
+        transform.scale.add_keyframe(0, Point(100, 100))
+        transform.scale.add_keyframe(30, Point(100, 100))
+        transform.scale.add_keyframe(self.duration, Point(100, 100))
 
 
 class ScaleUpAnimation(BaseAnimation):
