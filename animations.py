@@ -46,6 +46,8 @@ class BounceAnimation(BaseAnimation):
         
         for frame, scale in keyframes:
             transform.scale.add_keyframe(frame, scale)
+        
+        transform.scale.add_keyframe(self.duration, Point(100, 100))
 
 
 class BottomToCenterAnimation(BaseAnimation):
